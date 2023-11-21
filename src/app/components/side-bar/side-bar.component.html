@@ -1,0 +1,11 @@
+<div class="pt-16 px-4">
+
+  <div *ngFor="let links of linksSideBar">
+    <button (click)="changePage(links)"  class="w-full flex gap-2 px-4 py-3 items-center" [ngClass]="{'bg-[#A9DFD8] rounded-md': links.title == page}" >
+      <fa-icon [icon]="links.icon"></fa-icon>
+      <p class="text-xs font-semibold text-dashboard">{{links.title}}</p>
+    </button>
+  </div>
+
+
+</div>
